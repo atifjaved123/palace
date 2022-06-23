@@ -76,9 +76,4 @@ group :production do
   gem"rails_12factor"
 end
 
-production:
-  adapter: postgresql
-  database: my_database_production
-  pool: 5
-  timeout: 5000
-end
+
