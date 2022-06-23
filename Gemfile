@@ -70,3 +70,15 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+group :production do
+  gem "pg"
+  gem"rails_12factor"
+end
+
+production:
+  adapter: postgresql
+  database: my_database_production
+  pool: 5
+  timeout: 5000
+end
